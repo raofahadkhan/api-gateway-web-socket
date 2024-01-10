@@ -1,6 +1,8 @@
 import * as cdk from "aws-cdk-lib";
 import { Construct } from "constructs";
 import * as dynamodb from "aws-cdk-lib/aws-dynamodb";
+import * as apigwv2 from "@aws-cdk/aws-apigatewayv2-alpha";
+import * as apigwv2_integrations from "@aws-cdk/aws-apigatewayv2-integrations-alpha";
 
 export class WebSocketStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
